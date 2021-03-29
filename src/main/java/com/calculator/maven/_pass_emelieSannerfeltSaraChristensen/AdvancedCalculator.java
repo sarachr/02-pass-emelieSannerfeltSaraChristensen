@@ -4,56 +4,54 @@ public class AdvancedCalculator extends BasicCalculator implements AdvancedCalcu
 
 	@Override
 	public double addition(double firstNumber, double secondNumber) {
-		// TODO Auto-generated method stub
-		return 0;
+		return firstNumber+secondNumber;
 	}
 
 	@Override
 	public double subtraction(double firstNumber, double secondNumber) {
-		// TODO Auto-generated method stub
-		return 0;
+		return firstNumber-secondNumber;
 	}
 
 	@Override
 	public double multiplication(double firstNumber, double secondNumber) {
-		// TODO Auto-generated method stub
-		return 0;
+		return firstNumber*secondNumber;
 	}
 
 	@Override
 	public double division(double firstNumber, double secondNumber) {
-		// TODO Auto-generated method stub
-		return 0;
+		double result = firstNumber / secondNumber;
+		if (Double.isFinite(result)) {
+			System.out.println("Division by zero?");
+			return -0.123456789;
+		} else {
+			return result;
+		}
+		
 	}
 
 	@Override
 	public double square(double number) {
-		// TODO Auto-generated method stub
-		return 0;
+		return number * number;
 	}
 
 	@Override
 	public double raisedToThePowerOf(double base, double exponent) {
-		// TODO Auto-generated method stub
-		return 0;
+		return Math.pow(base,  exponent);
 	}
 
 	@Override
 	public double absoluteValue(double number) {
-		// TODO Auto-generated method stub
-		return 0;
+		return Math.abs(number);
 	}
 
 	@Override
 	public double cube(double number) {
-		// TODO Auto-generated method stub
-		return 0;
+		return number * number * number;
 	}
 
 	@Override
 	public double squareRoot(double number) {
-		// TODO Auto-generated method stub
-		return 0;
+		return Math.sqrt(number);
 	}
 
 }
